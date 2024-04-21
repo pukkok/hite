@@ -27,10 +27,7 @@ function Sidebar () {
     }
 
     const resetSidebar = () => {
-        const brand = document.querySelectorAll('.brand-item')
-        brand.forEach(item=>{
-            item.classList.remove('on')
-        })
+        prevItem.classList.remove('on')
     }
 
     return(
