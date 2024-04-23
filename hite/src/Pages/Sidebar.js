@@ -17,6 +17,7 @@ function Sidebar () {
     const resetSidebar = () => {
         setActiveItem(null)
     }
+    
     return(
         <div className="side-bar" onMouseLeave={resetSidebar}>
             <div className="top-menu" >

@@ -3,11 +3,9 @@ import { Container, ImgBox, Nav } from "../Components";
 import './styles/SubPage.css'
 import subData from "../Datas/subData";
 
-const subList = ['HOME', '진로골드', 'TV CF', 'PRINT']
-
 function SubPage () {
     console.log(subData[0])
-    const {name, cf_title, detail, bottle, pet, alc, description} = subData[0]
+    const {name, sub_list, cf_title, detail, bottle, pet, alc, description} = subData[0]
 
     return(
         <div className="Sub-page">
@@ -17,7 +15,7 @@ function SubPage () {
 
     <div>
         <Container maxWidth={'1000'}>
-            <Nav list={subList}/>
+            <Nav list={sub_list}/>
         </Container>
     </div>
 
