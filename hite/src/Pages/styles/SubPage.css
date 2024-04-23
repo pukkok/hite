@@ -1,0 +1,62 @@
+.Sub-page{
+    box-sizing: border-box;
+    width: 100vw;
+    padding-left: 200px;
+    overflow: hidden;
+}
+
+.box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: #d9d9d9;
+    z-index: 10;
+}
+
+.Sub-page .img-box{
+    position: relative;
+    left: 50%;
+    margin-left: -1150px;
+    width: 2300px;
+    height: 580px;
+}
+
+.Sub-page .Nav-ul{
+    border: solid 1px red;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Sub-page-info{
+
+}
+
+.Sub-page-info .title{
+    text-align: center;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.Sub-page-info .brand-content{
+    white-space: pre-line;
+}
+
+.Sub-page-info .table .bottle{
+    width: 15px;
+    height: 48px;
+}
+.Sub-page-info .table .pet{
+    width: 15px;
+    height: 46px;
+}
+.Sub-page-info .bottle-size{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
