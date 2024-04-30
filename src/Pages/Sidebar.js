@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './styles/Sidebar.css'
-import { ImgBox , Nav } from "../Components";
+import { Nav } from "../Components";
 import brandData from "../Datas/brandData";
 import { Link } from "react-router-dom";
 import classNames from 'classnames';
@@ -8,7 +8,6 @@ import classNames from 'classnames';
 function Sidebar () {
     const [activeItem, setActiveItem] = useState(null)
     let keys = Object.keys(brandData)
-    // const {beer, soju, whiskey, wine, imported, sake, extra, international, spirit } = brandData
 
     const subOpen = (id) =>{
         setActiveItem(id)
