@@ -24,12 +24,12 @@ header .logo{
     height: 40px;
 }
 
-nav ul{
+header nav ul{
     display: flex;
     justify-content: space-between;
 }
 
-nav ul li{
+header nav ul li{
     font-weight: bold;
     text-transform: uppercase;
 }

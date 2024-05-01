@@ -1,7 +1,7 @@
 import React from "react";
 
 /** maxWidth (단위x) */
-function Container ({maxWidth, children}) {
+function maxContainer ({maxWidth, children}) {
     
     return(
         <div className="Container" style={{maxWidth: maxWidth+'px', margin: '0 auto'}}>
@@ -10,8 +10,8 @@ function Container ({maxWidth, children}) {
     )
 }
 
-export default Container
+export default maxContainer
 
-Container.defaultProps = {
+maxContainer.defaultProps = {
     maxWidth: '1280'
 }

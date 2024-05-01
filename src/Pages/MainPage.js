@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Header, Sidebar, Section1, Section2, Section3 } from './index'
 import { Container } from "../Components";
+import Footer from './Footer'
 
 function MainPage(){
 
@@ -46,6 +47,7 @@ function MainPage(){
             <Section1/>
             <Section2/>
             <Section3/>
+            <Footer/>
         </>
 
     )
