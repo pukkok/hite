@@ -36,31 +36,32 @@ function Footer () {
                 })}
             </nav>
         </Container>
-            <div className="body">
-                <Container>
-                    <Nav addClass={'policy'} list={policyData.policy}></Nav>
-                    <nav className="sns">
-                        하이트진로 SNS
-                        <Nav list={policyData.sns}/>
-                    </nav>
-                    <nav className="family">
-                        패밀리 사이트
-                        <Nav list={policyData.family} />
-                    </nav>
-                </Container>
-            </div>
 
-            <div className="footer">
-                <span className="address">
-			        (06075) 서울특별시 강남구 영동대로 714 하이트진로빌딩 /
-                </span>
-                <span className="tel">
-                    대표전화 02-3219-0114 / 사업자등록번호 214-81-00777
-                </span>
-                <div className="copyright">
-                    Copyright© 2016 HITEJINRO CO.LTD. ALL RIGHTS RESERVED.
-                </div>
+        <div className="body">
+            <Container>
+                <Nav addClass={'policy'} list={policyData.policy}></Nav>
+                <nav className="sns">
+                    <p>하이트진로 SNS</p>
+                    <Nav list={policyData.sns}/>
+                </nav>
+                <nav className="family">
+                    <p>패밀리 사이트</p>
+                    <Nav list={policyData.family} />
+                </nav>
+            </Container>
+        </div>
+
+        <div className="footer">
+            <span className="address">
+                (06075) 서울특별시 강남구 영동대로 714 하이트진로빌딩 /
+            </span>
+            <span className="tel">
+                대표전화 02-3219-0114 / 사업자등록번호 214-81-00777
+            </span>
+            <div className="copyright">
+                Copyright© 2016 HITEJINRO CO.LTD. ALL RIGHTS RESERVED.
             </div>
+        </div>
         
 
     </footer>

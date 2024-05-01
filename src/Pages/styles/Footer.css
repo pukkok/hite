@@ -1,9 +1,9 @@
 footer{
     padding-top: 50px;
     background-color: #292929;
-    height: 100vh;
 }
 
+/* 사이트맵 파트 */
 .site-map li > a{
     display: block;
     width: 100%;
@@ -92,12 +92,12 @@ footer{
 
 .site-map .depth2 li:hover{
     color: #fff;
-    width: fit-content;
 }
 
+/* 바디 파트 */
 footer .body{
     margin-top: 30px;
-    padding: 10px 0;
+    height: 40px;
     border-top: solid 1px #343434;
     border-bottom: solid 1px #343434;
     color: #fff;
@@ -105,34 +105,118 @@ footer .body{
 
 footer .body .Container{
     display: flex;
-    justify-content: space-around;
+    width: 1280px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 footer .body .policy{
     display: flex;
-    gap: 10px;
+    margin-right: 30px;
+    font-size: 11.5px;
+    min-width: 700px;
 }
+
+footer .body .policy li{
+    padding-right: 10px;
+    color: #7b7b7b;
+}
+footer .body .policy li:nth-child(1){
+    color: #0d5ffb;
+}
+
 footer .body .policy li:not(:nth-child(1))::before{
     content: '|';
     padding-right: 10px;
 }
 
-footer .sns,
-footer .family{
-    display: block;
+footer .body .sns,
+footer .body .family{
+    font-size: 12px;
+    min-width: 160px;
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: solid 1px #343434;
+    color: #adadad;
+    position: relative;
+    height: 100%;
 }
 
+footer .body .sns p,
+footer .body .family p{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
 
+footer .body .sns p::after,
+footer .body .family p::after{
+    content: '';
+    background-image: url('./bu_familysite.png');
+    width: 14px;
+    height: 8px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transform: rotate(-180deg);
+    transition: .3s;
+}
 
+footer .body .sns ul,
+footer .body .family ul{
+    box-sizing: border-box;
+    width: 100%;
+    position: absolute;
+    bottom: 100%;
+    z-index: 1;
 
+    display: block;
+    flex-direction: column;
 
+    background-color: #4e4e4e;
+    transition: .5s;
+    height: 0px;
+    overflow: hidden;
+}
 
+footer .body .sns ul li,
+footer .body .family ul li{
+    padding: 10px 20px 0;
+    height: 20px;
+}
 
+footer .body .sns:hover,
+footer .body .family:hover{
+    background-color: #4e4e4e;
+}
 
+footer .body .sns:hover p::after,
+footer .body .family:hover p::after{
+    transform: rotate(0);
+}
 
+footer .body .sns:hover ul{
+    height: 460px;
+    min-height: fit-content;
+}
+footer .body .family:hover ul{
+    height: 160px;
+}
 
+footer .body .sns ul li:hover,
+footer .body .family ul li:hover{
+    color: #fff;
+}
 
+footer .body .sns ul li > a {
+    display: block;
+    width: 100%;
+}
 
+/* 푸터 파트 */
 footer .footer{
     color: #545454;
     font-size: 10.5px;
