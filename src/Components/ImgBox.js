@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function ImgBox ({src, path, addClass}) {
+function ImgBox ({src, path, addClass, children}) {
     return(
         <div className={addClass ? addClass : 'img-box'}>
             {path ? 
@@ -10,6 +10,7 @@ function ImgBox ({src, path, addClass}) {
             </Link> :
                 <img src={src} style={{width:'100%', height: '100%'}}/>
             }
+            {children}
         </div>
     )
 }

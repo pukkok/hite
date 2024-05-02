@@ -4,7 +4,10 @@ import React from "react";
 function maxContainer ({maxWidth, children}) {
     
     return(
-        <div className="Container" style={{maxWidth: maxWidth+'px', margin: '0 auto'}}>
+        // <div className="Container" style={{maxWidth: maxWidth+'px', margin: '0 auto'}}>
+        //     {children}
+        // </div>
+        <div className="Container" style={{width: maxWidth+'px', margin: '0 auto'}}>
             {children}
         </div>
     )

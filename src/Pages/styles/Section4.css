@@ -1,43 +1,44 @@
 .section4{
     width: 100%;
-    height: 100vh;
+    height: 200vh;
     background-color: pink;
 }
-
-
 
 .section4 .news{
     width: 100%;
     box-sizing: border-box;
-    padding: 30px;
-    height: 450px;
+    padding: 30px 50px;
+    height: 500px;
     background-color: #4e4e4e;
     position: relative;
 }
 
 .section4 .square{
     position: absolute;
-    top: 50%;
+    top: 45%;
     transform: translateY(-50%);
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
-    color: white;
+    color: #fff;
 }
 
-
-.section4 .square-test{
-    border: solid 1px white;
-    width: 300px;
-    height: 300px;
+.section4 .square .text-box{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    margin-right: auto;
-    position: absolute;
-    left: 0;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.section4 .square .text-box h1{
+    font-size: 50px;
+}
+
+.section4 .square .text-box h4{
+    margin-top: auto;
+    font-size: 16px;
 }
 
 .section4 .news article{
@@ -51,8 +52,8 @@
 }
 
 .section4 .news .img-box{
-    width: 280px;
-    height: 320px;
+    width: 270px;
+    height: 330px;
     position: relative;
     top: 0;
     
@@ -65,6 +66,61 @@
     /* top: 600px; */
 }
 
+.section4 .news .img-box .news-cover{
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    color: #fff;
+    background-color: rgba(4, 69, 244, .85);
+
+    transition: .3s;
+    cursor: pointer;
+    overflow: hidden;
+}
+.section4 .news .img-box .news-cover .learn-more{
+    width: 127px;
+    height: 32px;
+}
+.section4 .news .img-box .news-cover h2,
+.section4 .news .img-box .news-cover p,
+.section4 .news .img-box .news-cover .learn-more{
+    transition: .1s;
+    opacity: 0;
+}
+
+.section4 .news .img-box:hover .news-cover{
+    opacity: 1;
+    width: 100%;
+}
+
+.section4 .news .img-box:hover .news-cover h2,
+.section4 .news .img-box:hover .news-cover p,
+.section4 .news .img-box:hover .news-cover .learn-more{
+    transition-delay: .4s;
+    opacity: 1;
+}
+
+
 /* .section4 .news article:hover .img-box{
     top: 0;
 } */
+
+.section4 .SNS{
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+
+.section4 .SNS article{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
