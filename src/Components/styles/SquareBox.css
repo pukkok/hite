@@ -6,6 +6,8 @@
 
 .line-top, .line-right, .line-bottom, .line-left{
     position: absolute;
+    width: 0;
+    height: 0;
 }
 
 .line-x{
@@ -20,11 +22,13 @@
 
 .line-top{
     top: 0;
+    left: 0;
     animation: xline forwards linear;
 }
 
 .line-right{
     right: 0;
+    top: 0;
     animation: yline forwards linear;
     animation-delay: .8s;
 }

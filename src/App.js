@@ -1,8 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
 import { MainPage, SubPage, Sidebar } from './Pages';
 import { Routes, Route} from 'react-router-dom'
-import brandData from './Datas/brandData';
 
 function App() {
   return (

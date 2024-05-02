@@ -2,7 +2,7 @@ import React from "react";
 import './styles/SquareBox.css'
 
 /** size : 박스크기(단위 필요x) lineColor : 라인색상 */
-function SquareBox ({size, thick, lineColor, lineDuration}) {
+function SquareBox ({size, thick, lineColor, lineDuration, children}) {
     const boxSize = {
         width: size + 'px',
         height: size + 'px'
@@ -15,13 +15,13 @@ function SquareBox ({size, thick, lineColor, lineDuration}) {
     // 3번 딜레이 : 1번 따라서 딜레이 * [0, 1, 2, 3]
 
     const lineX = {
-        width: '100%',
-        height: thick + 'px'
+        // width: '100%',
+        // height: thick + 'px'
     }
 
     const lineY = {
-        width: thick + 'px',
-        height: '100%'
+        // width: thick + 'px',
+        // height: '100%'
     }
 
     const LineStyle = {
@@ -36,6 +36,7 @@ function SquareBox ({size, thick, lineColor, lineDuration}) {
             <div className="line-right line-y" style={{...LineStyle, ...lineY}}></div>
             <div className="line-bottom line-x" style={{...LineStyle, ...lineX}}></div>
             <div className="line-left line-y" style={{...LineStyle, ...lineY}}></div>
+            {children}
         </div>
     )
 }

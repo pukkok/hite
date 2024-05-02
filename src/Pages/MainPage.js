@@ -1,11 +1,8 @@
-import React, { useEffect, useRef, useState } from "react";
-import { Header, Sidebar, Section1, Section2, Section3 } from './index'
-import { Container } from "../Components";
+import React, { useEffect } from "react";
+import { Header, Section1, Section2, Section3, Section4 } from './index'
 import Footer from './Footer'
 
 function MainPage(){
-
-    const x = useRef()
 
     useEffect(()=>{
         const observer = new IntersectionObserver((entries)=>{
@@ -47,6 +44,7 @@ function MainPage(){
             <Section1/>
             <Section2/>
             <Section3/>
+            <Section4/>
             <Footer/>
         </>
 
