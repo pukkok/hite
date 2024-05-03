@@ -1,10 +1,18 @@
 import React from "react";
 import './styles/Section4.css'
-import { Container, ImgBox, SquareBox } from "../Components";
+import { Container, ImgBox, SquareBox } from "../../Components";
 function Section4 (){
     return(
         <section className="section4">
             <Container>
+                <div className="bg">
+                    <ImgBox src={'./imgs/bg/a3.png'}/>
+                    <ImgBox src={'./imgs/bg/a4.png'}/>
+                    <ImgBox src={'./imgs/bg/a2.png'}/>
+                    <ImgBox src={'./imgs/bg/a5.png'}/>
+                    <ImgBox src={'./imgs/bg/b1.png'}/>
+                    <ImgBox src={'./imgs/bg/b2.png'}/>
+                </div>
                 <div className="news">
                     <SquareBox size={250}>
                         <div className="text-box">
@@ -44,23 +52,18 @@ function Section4 (){
                 </div>
 
                 <div className="SNS">
-                    <SquareBox size={270}>
+                    <SquareBox size={270} lineColor={'#a4b7b1'}>
                         <div className="text-box">
                             <h1>HITE <br/> SNS</h1>
                             <h4>NEW 하이트진로</h4>
                         </div>
                     </SquareBox>
                     <article>
-                        <ImgBox />
-                        <ImgBox />
-                        {/* <ImgBox src={'./imgs/sns/fb_cover.jpg'}/> */}
                         <ImgBox src={'./imgs/sns/fb_cover.jpg'}/>
-                        <ImgBox src={'./imgs/sns/fb_cover2.jpg'}/>
                         <ImgBox src={'./imgs/sns/fb_cover3.jpg'}/>
                         <ImgBox src={'./imgs/sns/blog_cover.jpg'}/>
                         <ImgBox src={'./imgs/sns/blog_cover2.png'}/>
-                        <ImgBox src={'./imgs/sns/blog_cover3.png'}/>
-                        <ImgBox src={'./imgs/sns/insta_cover.jpg'}/>
+                        <ImgBox src={'./imgs/sns/insta_cover1.jpg'}/>
                         <ImgBox src={'./imgs/sns/insta_cover2.jpg'}/>
                         <ImgBox src={'./imgs/sns/insta_cover3.jpg'}/>
                     </article>

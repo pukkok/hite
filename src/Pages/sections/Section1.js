@@ -1,7 +1,7 @@
 import React from "react";
-import imgsData from "../Datas/imgsData";
-import { ImgBox } from "../Components";
-import {Container} from '../Components'
+import imgsData from "../../Datas/imgsData";
+import { ImgBox } from "../../Components";
+import {Container} from '../../Components'
 import './styles/Section1.css'
 
 function Section1 (){

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { ImgBox, SquareBox } from "../Components";
+import { ImgBox, SquareBox } from "../../Components";
 import './styles/Section2.css'
 
 function Section2 () {

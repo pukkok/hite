@@ -1,8 +1,8 @@
 import React from "react";
 import './styles/Header.css'
-import { Nav, ImgBox, Container } from "../Components"
-import navData from "../Datas/navData"
-import hiteLogo from '../logo_hitejinro.png'
+import { Nav, ImgBox, Container } from "../../Components"
+import navData from "../../Datas/navData"
+import hiteLogo from './styles/logo_hitejinro.png'
 
 const LoginData = ['login', 'join', 'recruit', 'language']
 

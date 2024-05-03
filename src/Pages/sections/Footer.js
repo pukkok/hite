@@ -1,10 +1,10 @@
 import React from "react";
-import siteMapData from "../Datas/footerSiteMap";
-import policyData from "../Datas/footerPolicy";
-import Nav from "../Components/Nav";
+import siteMapData from "../../Datas/footerSiteMap";
+import policyData from "../../Datas/footerPolicy";
+import Nav from "../../Components/Nav";
 import './styles/Footer.css'
 import { Link } from "react-router-dom";
-import Container from "../Components/Container";
+import Container from "../../Components/Container";
 
 function Footer () {
     const keys = Object.keys(siteMapData)

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import './styles/Sidebar.css'
-import { Nav } from "../Components";
-import brandData from "../Datas/brandData";
+import { Nav } from "../../Components";
+import brandData from "../../Datas/brandData";
 import { Link } from "react-router-dom";
 import classNames from 'classnames';
 

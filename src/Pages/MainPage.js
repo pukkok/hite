@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { Header, Section1, Section2, Section3, Section4 } from './index'
-import Footer from './Footer'
+import Footer from './sections/Footer'
+import NewsPage from "./sections/NewsPage";
+import SNSPage from "./SNS";
 
 function MainPage(){
 
@@ -44,7 +46,9 @@ function MainPage(){
             <Section1/>
             <Section2/>
             <Section3/>
-            <Section4/>
+            {/* <Section4/> */}
+            <NewsPage/>
+            {/* <SNSPage/> */}
             <Footer/>
         </>
 
