@@ -51,15 +51,18 @@ function Section4 (){
                         </div>
                     </SquareBox>
                     <article>
+                        <ImgBox />
+                        <ImgBox />
+                        {/* <ImgBox src={'./imgs/sns/fb_cover.jpg'}/> */}
                         <ImgBox src={'./imgs/sns/fb_cover.jpg'}/>
                         <ImgBox src={'./imgs/sns/fb_cover2.jpg'}/>
                         <ImgBox src={'./imgs/sns/fb_cover3.jpg'}/>
                         <ImgBox src={'./imgs/sns/blog_cover.jpg'}/>
                         <ImgBox src={'./imgs/sns/blog_cover2.png'}/>
                         <ImgBox src={'./imgs/sns/blog_cover3.png'}/>
-                        <ImgBox addClass={'instagram'} src={'./imgs/sns/insta_cover.jpg'}/>
-                        <ImgBox addClass={'instagram'} src={'./imgs/sns/insta_cover2.jpg'}/>
-                        <ImgBox addClass={'instagram'} src={'./imgs/sns/insta_cover3.jpg'}/>
+                        <ImgBox src={'./imgs/sns/insta_cover.jpg'}/>
+                        <ImgBox src={'./imgs/sns/insta_cover2.jpg'}/>
+                        <ImgBox src={'./imgs/sns/insta_cover3.jpg'}/>
                     </article>
                 </div>
             </Container>
