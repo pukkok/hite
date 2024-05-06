@@ -1,16 +1,22 @@
-import React from "react";
-import { Container, ImgBox, SquareBox } from "../Components";
+import React, { useEffect } from "react";
+import { Container, ImgBox, SquareBox } from "../../Components";
+import './styles/SNSPage.css'
+
 function SNSPage (){
+
+    const bgImg = ['a3.png', 'a4.png', 'a2.png', 'a5.png', 'b1.png', 'b2.png']
+
+    // useEffect(()=>{
+    //    const observer = IntersectionObserver()
+    // })
+
     return(
         <section className="SNS">
             <Container>
                 <div className="bg">
-                    <ImgBox src={'./imgs/bg/a3.png'}/>
-                    <ImgBox src={'./imgs/bg/a4.png'}/>
-                    <ImgBox src={'./imgs/bg/a2.png'}/>
-                    <ImgBox src={'./imgs/bg/a5.png'}/>
-                    <ImgBox src={'./imgs/bg/b1.png'}/>
-                    <ImgBox src={'./imgs/bg/b2.png'}/>
+                    {bgImg.map((img, id) => {
+                        return <ImgBox key={id} src={`./imgs/bg/${img}`}/>
+                    })}
                 </div>
                 
                 <div className="content">

@@ -47,32 +47,6 @@ function NewsPage () {
                         </ImgBox>
                     )
                 })}
-                {/* <ImgBox src={'./imgs/news/broad-hd.jpg'}>
-                    <div className="news-cover">
-                        <h2>보도자료</h2>
-                        <p>언론 속 하이트진로의 <br/>
-                        다양한 소식을 알려드립니다 </p>
-                        <ImgBox addClass={'learn-more'} src={'./imgs/icons/btn_hotclick_more.png'}/>
-                    </div>
-                </ImgBox>
-                <ImgBox src={'./imgs/news/social.jpg'}>
-                    <div className="news-cover">
-                        <h2>사회공헌</h2>
-                        <p>하이트진로의 사회공헌 활동은<br/>
-                        모두가 즐겁고 행복한 세상을<br/>
-                        만들기 위한 실천입니다. </p>
-                        <ImgBox addClass={'learn-more'} src={'./imgs/icons/btn_hotclick_more.png'}/>
-                    </div>
-                </ImgBox>
-                <ImgBox src={'./imgs/news/factory.jpg'}>
-                    <div className="news-cover">
-                        <h2>공장견학</h2>
-                        <p>하이트진로만의 최첨단 설비와<br/>
-                        친환경이념이 담긴 생산공정을<br/>
-                        직접 만나보세요.</p>
-                        <ImgBox addClass={'learn-more'} src={'./imgs/icons/btn_hotclick_more.png'}/>
-                    </div>
-                </ImgBox> */}
             </article>
             </div>
             </Container>
