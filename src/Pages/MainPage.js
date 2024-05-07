@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
-import { Header, Section1, Section2, Section3, Section4, Footer, NewsPage,  SNSPage } from './index'
+import { 
+    Header, Section1, Section2, Section3, 
+    Section4, Footer, NewsPage,  SNSPage } from './index'
 
 function MainPage(){
 
@@ -39,7 +41,6 @@ function MainPage(){
     return(
         <>
             <Header/>
-            
             <Section1/>
             <Section2/>
             <Section3/>

@@ -1,0 +1,99 @@
+@charset "utf-8";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css");
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+
+* {
+    box-sizing: border-box; 
+}
+
+body{
+    color:#777;
+    font-size:13px;
+    line-height:1.5em;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.login-box {
+    /* width: 570px;
+    height: 600px; */
+    width: 568px;
+    height: 487px;
+    padding: 40px 55px;
+}
+.login-box header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+.login-box header h1{
+    color: #000;
+    font-size: 40px;
+    font-weight: 900;
+    padding-bottom: 15px;
+}
+.login-box header p{
+    color: #666;
+    font-size: 13px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+form {
+    /* border: solid 1px red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+form div{
+    width: 250px;
+}
+
+form input {
+    width: 100%;
+    height: 49px;
+    padding: 16px 1px 16px 9px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+form button{
+    width: 115px;
+    height: 108px;
+    background-color: #449bff;
+    color: white;
+    padding-left: 20px;
+    text-align: left;
+    border: 0;
+    cursor: pointer;
+}
+
+.small-box{
+    display: flex;
+    padding-top: 30px;
+    border-top: 1px solid #e1e1e1;
+}
+
+.small-box div{
+    width: 50%;
+}
+
+.small-box h2{
+    padding-bottom: 10px;
+    color: #000;
+}
+
+.small-box h3{
+    padding-bottom: 15px;
+}
+
+.small-box button{
+    font-size: 13px;
+    border : 0;
+    padding : 8px 20px;
+    background-color: #000;
+    color: #eee;
+    cursor: pointer;
+}
