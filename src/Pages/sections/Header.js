@@ -18,16 +18,15 @@ function Header () {
     }
     const main = mapping(navData, 'main')
 
-    
     const xx = () => {
-        window.open(`${window.location.href}login`, '_black', 'width=550px, height=550px')
+        window.open(`${window.location.href}login`, '_blank', 'width=550px, height=550px')
     }
 
     return(
         <header>
             <Container>
                 <nav>
-                    <button onClick={xx}>test</button>
+                    <a onClick={xx}>test</a>
                     <ImgBox addClass={'logo'} src={hiteLogo} path={'/'}/>
                     <Nav list={main} addClass={'main-nav'}/>
                     <Nav list={LoginData} target='_blank' addClass={'login-nav'} />

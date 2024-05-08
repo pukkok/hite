@@ -5,7 +5,7 @@ import { Routes, Route} from 'react-router-dom'
 function App() {
   return (
     <div className="App">
-      {/* <Sidebar/> */}
+      <Sidebar/>
       <Routes>
         <Route exact path='/' element={<MainPage/>} />
         <Route exact path='/login' element={<LoginPage/>}/>
