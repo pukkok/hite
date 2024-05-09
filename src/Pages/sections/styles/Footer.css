@@ -174,8 +174,9 @@ footer .body .family ul{
     bottom: 100%;
     z-index: 1;
 
-    display: block;
+    display: flex;
     flex-direction: column;
+    gap: 10px;
 
     background-color: #4e4e4e;
     transition: .5s;
@@ -201,7 +202,7 @@ footer .body .family:hover p::after{
 
 footer .body .sns:hover ul{
     height: 460px;
-    min-height: fit-content;
+    /* min-height: fit-content; */
 }
 footer .body .family:hover ul{
     height: 160px;
